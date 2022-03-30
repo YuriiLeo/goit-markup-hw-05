@@ -736,6 +736,7 @@ letter-spacing: 0.03em;
 
 .projects-link {
     display: block;
+    
 }
 
 .projects-link:hover,
@@ -744,6 +745,7 @@ letter-spacing: 0.03em;
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .projects-item:nth-child(3n) {
@@ -787,4 +789,45 @@ letter-spacing: 0.03em;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.projects-link:hover .projects-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projects-thumb {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.projects-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transition: opacity 250ms var(--kubik-rubik),
+     transform 250ms var(--kubik-rubik);
+
+    transform: translateY(100%);
+
+}
+
+
+.projects-overlay-text {
+    display: flex;
+
+    padding: 63px 24px 63px 24px;
+    margin: 0;
+    
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-white-color);
+    background: rgba(33, 150, 243, 0.9);
 }
