@@ -75,10 +75,12 @@ a {
 
 .header-link {
     color: var(--title-text-color);
+    transition: color 250ms var(--kubik-rubik);
 }
 
 .contact-link {
     color: var(--primare-text-color);
+    transition: color 250ms var(--kubik-rubik);
 }
 
 .header-link,
@@ -104,6 +106,9 @@ a {
     display: inline-block;
     text-align: center;
     border: 1px solid transparent;
+    transition: color 250ms var(--kubik-rubik),
+    background-color 250ms var(--kubik-rubik),
+    box-shadow 250ms var(--kubik-rubik);
 }
  
 .hero-btn:hover,
@@ -530,6 +535,8 @@ margin-left: 50px;
     border-radius: 50%;
     color: var(--color-icon);
     background-color: var(--background-first);
+    transition: color 2500ms var(--kubik-rubik),
+    background-color 2500ms var(--kubik-rubik);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -582,6 +589,8 @@ margin-left: 50px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    transition: color 250ms var(--kubik-rubik),
+    border 250ms var(--kubik-rubik);
     
 }
 
@@ -613,9 +622,11 @@ margin-left: 50px;
 /* интерактивные элементы футер */
 .footer-link-map {
     color: var(--primary-white-color);
+    transition: color 250ms var(--kubik-rubik);
 }
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--kubik-rubik);
 }
 
 .footer-link-map:hover,
@@ -684,6 +695,8 @@ letter-spacing: 0.03em;
     border-radius: 50%;
     color: var(--primary-white-color);
     background-color: rgba(255, 255, 255, 0.1);
+    transition: color 250ms var(--kubik-rubik),
+    background-color 250ms var(--kubik-rubik);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -732,14 +745,14 @@ letter-spacing: 0.03em;
 }
 
 .projects-item {
-    width: calc((100% - 60px) / 3);
+    width: calc((100%-60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
 .projects-link {
     display: block;
-    
+    transition: box-shadow 250ms var(--kubik-rubik);
 }
 
 .projects-link:hover,
@@ -794,6 +807,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
 }
 
+
 .projects-link:hover .projects-overlay {
     opacity: 1;
     transform: translateY(0);
@@ -814,7 +828,7 @@ letter-spacing: 0.03em;
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transition: opacity 250ms var(--kubik-rubik),
-     transform 250ms var(--kubik-rubik);
+    transform 250ms var(--kubik-rubik);
 
     transform: translateY(100%);
 
